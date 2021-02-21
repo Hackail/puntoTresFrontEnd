@@ -8,15 +8,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ServiciosService } from './servicios/servicios.service';
 import { BuscarComponent } from './componentes/buscar/buscar.component';
-import { PersonaCardComponent } from './componentes/persona-card/persona-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListarComponent,
     CrearComponent,
-    BuscarComponent,
-    PersonaCardComponent
+    BuscarComponent
   ],
   imports: [
     BrowserModule,

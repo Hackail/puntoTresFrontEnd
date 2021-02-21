@@ -47,7 +47,7 @@
                     <td>{{ persona.firstName }}</td>
                     <td>{{ persona.lastName }}</td>
                     <td>{{ persona.fullName }}</td>
-                    <td>{{ persona.birth }}</td>
+                    <td>{{ persona.birth | date:"dd/MM/YYYY"}}</td>
                   </tr>
                 </tbody>
               </table>
