@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pruebaTecnicaFront';
+
+  constructor(
+    private router:Router
+  ) {
+
+  }
+
+  listar() {
+    this.router.navigate(["listar"])
+  }
+
+  crear() {
+    this.router.navigate(["crear"])
+  }
+
+  buscar() {
+    this.router.navigate(["buscar"])
+  }
 }

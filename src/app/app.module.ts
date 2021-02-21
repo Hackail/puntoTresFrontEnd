@@ -1,18 +1,30 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ListarComponent } from './componentes/listar/listar.component';
+import { CrearComponent } from './componentes/crear/crear.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { ServiciosService } from './servicios/servicios.service';
+import { BuscarComponent } from './componentes/buscar/buscar.component';
+import { PersonaCardComponent } from './componentes/persona-card/persona-card.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListarComponent,
+    CrearComponent,
+    BuscarComponent,
+    PersonaCardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [ServiciosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

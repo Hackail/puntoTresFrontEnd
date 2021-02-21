@@ -1,0 +1,66 @@
+<div class="container col-md-6 pb-4">
+  <div class="card">
+    <div class="card-header text-center">
+      <h2>Agregar una persona</h2>
+    </div>
+    <div class="card-body">
+      <form action="">
+        <div class="mb-3">
+          <label for="numDocumento" class="form-label"
+            >Número de documento</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="numDocumento"
+            aria-describedby="infoBusqueda"
+            [(ngModel)]="persona.numDocument"
+            name="numDocument"
+          />
+          <div id="infoBusqueda" class="form-text">
+            Debes escribir el número de documento de la persona que deseas
+            agregar.
+          </div>
+          <label for="nombrePersona" class="form-label">Nombres</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nombrePersona"
+            [(ngModel)]="persona.firstName"
+            name="firstName"
+          />
+
+          <label for="apellidoPersona" class="form-label">Apellidos</label>
+          <input
+            type="text"
+            class="form-control"
+            id="apellidoPersona"
+            [(ngModel)]="persona.lastName"
+            name="numDocument"
+          />
+          <label for="fechaNacimientoPersona" class="form-label"
+            >Fecha de nacimiento</label
+          >
+          <input
+            type="date"
+            class="form-control"
+            id="fechaNacimientoPersona"
+            [(ngModel)]="persona.birth"
+            name="birth"
+          />
+          <label for="numDocumentoPadre" class="form-label"
+            >Número de documento del padre</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="numDocumentoPadre"
+            [(ngModel)]="persona.parent"
+            name="parent"
+          />
+        </div>
+        <button (click)="crearPersona()" class="btn btn-primary">Crear</button>
+      </form>
+    </div>
+  </div>
+</div>
