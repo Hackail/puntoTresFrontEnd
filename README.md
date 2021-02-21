@@ -1,27 +1,47 @@
-# PruebaTecnicaFront
+# PuntoTresFrontEnd
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.1.
+En este repositorio se encuentra alojado el desarrollo del FrontEnd del problema propuesto en el punto 3
 
-## Development server
+## Comenzando 🚀
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Instrucciones generales de cómo correr el proyecto de forma local
 
-## Code scaffolding
+### Pre-requisitos 📋
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+En este repositorio se encuentra la capa del cliente para el desarrollo de la aplicación, por lo cual este proyecto depende de la capa de servidor y persistencia para tener un correcto funcionamiento. 
 
-## Build
+La capa del servidor se encuentra en el siguiente repositorio: https://github.com/Hackail/puntoTresBackend.git junto a sus instrucciones de instalación.
+La capa de persistencia se maneja con docker, la cual tendrá su explicación en el README.md en el proyecto de la parte del servidor.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Para poder ejecutar el proyecto de forma local se deben tener instalados los siguientes programas:
 
-## Running unit tests
+1. Tener instalado Git para poder clonar le repositorio
+2. Visual Studio Code (O cualquier otro editor de tecto de preferencia, ej: Atom)
+3. Contar con un navegador web para poder visualizar el proyecto
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Instalación 🔧
 
-## Running end-to-end tests
+Asumiendo que se cuentan con los programas previamente mencionados para poder ejecutar esta parte del proyecto, el siguiente paso a paso describirá cómo poder desplegar el proyecto de forma local
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+1. Se debe clonar el repositorio en una carpeta dentro del equipo en que se quiere desplegar.
+2. Luego se debe acceder a la carpeta raíz donde quedó el repositorio y allí abrir una cconsola de comandos y ejecutar el comando: "npm install"
+3. Una vez finalizado el proceso, se ejecuta el comando: "npm start". 
 
-## Further help
+## Despliegue 📦
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Este comando "npm start" desplegará de forma local la aplicación, la cual por defecto se despliega en el puerto 4200, en caso de que dicho puerto se encuentre ocupado, se debe escoger un puerto diferente en la ejecución del comando añadiendo lo siguiente: "npm start --port 1234"
+
+## Construido con 🛠️
+
+* [Angular CLI](https://github.com/angular/angular-cli) version 11.2.1. - El framework web utilizado
+
+## Versionado 📌
+
+Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/Hackail/puntoTresFrontEnd/tags).
+
+## Autores ✒️
+
+* **Juan Pablo Avila Diaz** - *Desarrrollados* - [Hackail](https://github.com/Hackail)
+
+---
+⌨️ con ❤️ por [Hackail](https://github.com/Hackail) 😊
